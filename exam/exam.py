@@ -17,3 +17,7 @@ def slicing2to5(sentence):
 def number_sign(number):
     pass
 
+
+# number が素数なら'ok',そうでないなら'ng'と出力してください
+def prime_number(number):
+    pass
