@@ -1,31 +1,46 @@
 # 'hello, {name}!'と出力してください 。
 def hello(name):
-    pass
+    print("hello, {0}!".format(name))
 
 
 # sentence の文字数を出力してください
 def length(sentence):
-    pass
+    print(len(sentence))
 
 
 # sentence の2文字目から5文字目まで(5文字目は含まない)を出力してください
 def slicing2to5(sentence):
-    pass
+    print(sentence[2:5])
 
 
 # number の符号を出力してください。ただし、0は'0'と出力してください
 def number_sign(number):
-    pass
+    if number < 0:
+        print('-')
+    elif number > 0:
+        print('+')
+    else:
+        print('0')
 
 
 # number が素数なら'ok',そうでないなら'ng'と出力してください
 def prime_number(number):
-    pass
+    q = abs(number)
+    if q == 2:
+        print('ok')
+        return
+    if q < 2 or q & 1 == 0:
+        print('ng')
+        return
+    if pow(2, q-1, q) == 1:
+        print('ok')
+    else:
+        print('ng')
 
 
 # 1からnumberまでの合計を出力してください
 def sum_from_1_to(number):
-    pass
+    print(sum([x for x in range(1, number + 1)]))
 
 
 # numberの階乗(factorial)を出力してください
